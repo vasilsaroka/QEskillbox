@@ -1,0 +1,35 @@
+&control
+    calculation       = 'scf'
+    restart_mode      = 'from_scratch'
+    prefix            = 'Si'
+    pseudo_dir        = @pseudo_dir
+    outdir            = @outdir
+    verbosity         = 'high'
+    wf_collect        = .true.
+/
+&system
+    ibrav             =  2
+    celldm(1)         =  @celldm
+    nat               =  2
+    ntyp              =  1
+    !nosym             = .false.
+    ecutwfc           =  @ecutwfc
+    nbnd              = 10
+/
+&electrons
+    diago_thr_init=1.0e-3,
+    electron_maxstep = 60,
+    diagonalization='david'
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1.0d-8,
+    !startingpot='file',
+    !startingwfc='atomic',
+/
+ATOMIC_SPECIES
+Si     28.086  Si.pz-vbc.UPF
+ATOMIC_POSITIONS (alat)
+Si        0.000000000   0.000000000   0.000000000
+Si        0.250000000   0.250000000   0.250000000
+K_POINTS {automatic}
+@kpt @kpt @kpt 1 1 1
