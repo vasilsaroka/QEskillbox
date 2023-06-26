@@ -19,9 +19,18 @@ Under Linux OS:
 - Pseudo potentials can be taken from [Pseudo Dojo](http://www.pseudo-dojo.org/).
 
 ## Demo
-- Bash script and *Si.pz-vbc.UPF* pseudo potential into the same folder
-- Run bash script in terminal as ``./DEopt``
-- Find the results of the optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
+### Bash script DEopt
+- Put Bash script ``DEopt`` and *Si.pz-vbc.UPF* pseudo potential into the same folder, i.e. the working folder.
+- Open terminal in this folder and run the Bash script in terminal as ``./DEopt``.
+- Find in the working folder the results of the optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
+
+### Python file DEopt.py
+- Put Python file ``DEopt.py`` with with QE input file *Si.scf-template.in* and pseudo potential *Si.pz-vbc.UPF* into the same folder, i.e. working folder
+- Open Python file and evaluate it cell after cell sequentially.
+- Find in the working folder the results of optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
+- Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*:
+  
+![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/f4c6b02d-2885-44d2-8715-eceb9ef1d3d7)
 
 ## Differential Evolution
 ### Python
