@@ -31,7 +31,9 @@ Under Linux OS:
 - Find in the working folder the QE outdir ``./tmp``.
 - Find in the working folder the results of optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
 - Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*.
-  
+
+![QEDE_2023-06-26_17_52_08](https://github.com/vasilsaroka/QEskillbox/assets/49445896/6231b35c-0742-4340-93ea-b036dc2beb2f)
+
 ![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/bd93e31e-657b-4ebc-9297-88b84fbc5efb)
 
 
