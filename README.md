@@ -22,11 +22,13 @@ Under Linux OS:
 ### Bash script DEopt
 - Put Bash script ``DEopt`` and *Si.pz-vbc.UPF* pseudo potential into the same folder, i.e. the working folder.
 - Open terminal in this folder and run the Bash script in terminal as ``./DEopt``.
+- Find in the working folder the QE outdir ``./tmp``.
 - Find in the working folder the results of the optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
 
 ### Python file DEopt.py
 - Put Python file ``DEopt.py`` with with QE input file *Si.scf-template.in* and pseudo potential *Si.pz-vbc.UPF* into the same folder, i.e. working folder
 - Open Python file and evaluate it cell after cell sequentially.
+- Find in the working folder the QE outdir ``./tmp``.
 - Find in the working folder the results of optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
 - Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*:
   
