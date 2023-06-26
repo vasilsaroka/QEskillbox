@@ -33,10 +33,10 @@ Under Linux OS:
 ![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/f4c6b02d-2885-44d2-8715-eceb9ef1d3d7)
 
 ## Differential Evolution
-### Python
 This repository contains Python code for Quantum Espresso parameters optimization with Differential Evolution (DE) global optimization method [1].
-An introduction into this method together with a python code can be found in the excellent [tutorial](https://pablormier.github.io/2017/09/05/a-tutorial-on-differential-evolution-with-python/#) by Pablo Rodriguez-Mier.
+A general introduction into this method together with a python realization can be found in the excellent [tutorial](https://pablormier.github.io/2017/09/05/a-tutorial-on-differential-evolution-with-python/#) by Pablo Rodriguez-Mier. Here, the DE method is adapted for the *geometry optimization* of the bulk Si crystal.
 
+### Python
 The DE algorithm here is rewritten from scratch in what we call a generation mixing form. It allows one to save some memory by storing the parameters space vectors from different generation in the same array. Several tests have shown that this does not affect the performance of the algorithm. In addition, the DE iterations stop when the convergence is achieved to avoid extra evaluations. In the given case, convergence is defined as the spread of the cost function values for all parameter space vectors being less than some threshold value.
 
 The python file contains the main functions *QEGenrun* and *QEDE*, the cell for a test run of the code on bulk Si followed by a few other cells that are used for the output results analysis such as visualizing and animating the DE convergence. The *QEDE* can perform optimization for an arbitrary number of parameters including integer ones, i.e. those for which only integer part is meaningful. The integer parameters are counted from the end of a parameter space vector and therefore must be placed accordingly. A template file for the bulk Si with parameter placeholders starting by convention from '@' is provided.  
