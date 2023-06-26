@@ -32,7 +32,8 @@ Under Linux OS:
 - Find in the working folder the results of optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
 - Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*:
   
-![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/f4c6b02d-2885-44d2-8715-eceb9ef1d3d7)
+![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/bd93e31e-657b-4ebc-9297-88b84fbc5efb){:style="display:block; margin-left:auto; margin-right:auto"}
+
 
 ## Differential Evolution
 This repository contains Python code for Quantum Espresso parameters optimization with Differential Evolution (DE) global optimization method [1].
