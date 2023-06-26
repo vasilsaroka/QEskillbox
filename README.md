@@ -24,22 +24,15 @@ A general introduction into DE method together with a python realization can be 
 
 - [1] Price, K., Storn, R. (1997). Differential Evolution – A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces. *Journal of Global Optimization*, **11**, 341–359. [https://doi.org/10.1023/A:1008202821328](https://doi.org/10.1023/A:1008202821328)
 
-### Python
-The DE algorithm here is rewritten from scratch in what we call a generation mixing form. It allows us to save memory by storing the parameter space vectors from different generation in the same array. Tests have shown that this does not affect the performance of the DE algorithm. In addition, the DE iterations stop when the convergence is achieved to avoid extra evaluations. In the given case, convergence is defined as the spread of the cost function values for all parameter space vectors being less than some threshold value.
 
-The python file contains the main functions *QEGenrun*(cost function) and *QEDE*, and the cell for a test run of the code on bulk Si followed by a few other cells that are used for the output results analysis such as visualizing and animating the DE convergence. The *QEDE* can perform optimization for an arbitrary number of parameters including integer ones, i.e. those for which only integer part is meaningful. The integer parameters are set by int_param_num option and, by convention, they are being counted from the end of a parameter space vector. Therefore, integer parameters must be placed accordingly in the parameter limits and placeholders arrays. A template file for the bulk Si with parameter placeholders starting by convention from '@' is provided.
-
-### Bash
-This repository also contains a bash script that creates the template of [QE input file](https://www.quantum-espresso.org/Doc/INPUT_PW.html) and a python script and then runs the python script. Once the python script run is finished, the temporarily created files are deleted leaving only the resulting QEDE*.out and QEDE*.png output files. The bulk Si is taken as an example with the three optimization parameters: ecutwfc, celldm and kpt. **For kpt parameter only its integer part is meaningful**. 
-
-### Demo
-#### Bash script DEopt
+## Demo
+### Bash script DEopt
 - Put Bash script ``DEopt`` and *Si.pz-vbc.UPF* pseudo potential into the same folder, i.e. the working folder.
 - Open terminal in this folder and run the Bash script in terminal as ``./DEopt``.
 - Find in the working folder the QE outdir ``./tmp``.
 - Find in the working folder the results of the optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
 
-#### Python file DEopt.py
+### Python file DEopt.py
 - Put Python file ``DEopt.py`` with QE input file *Si.scf-template.in* and pseudo potential *Si.pz-vbc.UPF* into the same folder, i.e. working folder
 - Open Python file and evaluate it cell after cell sequentially.
 - Find in the working folder the QE outdir ``./tmp``.
