@@ -14,8 +14,8 @@ The code was developed and tested under
 
 ## Preliminaries
 Under Linux OS:
-- Install QE by typing in the terminal: sudo apt-get install quantumespresso (recommended) or see [QE](https://www.quantum-espresso.org/login/) web page.
-- Install Python distribution by typing in the terminal: sudo apt-get install conda (recommended) or see [Anaconda Distribution](https://www.anaconda.com/download/#linux) guidelines.
+- Install QE by typing in the terminal: ``sudo apt-get install quantumespresso`` (recommended) or see [QE](https://www.quantum-espresso.org/login/) web page.
+- Install Python distribution by typing in the terminal: ``sudo apt-get install conda`` (recommended) or see [Anaconda Distribution](https://www.anaconda.com/download/#linux) guidelines.
 - Pseudo potentials can be taken from [Pseudo Dojo](http://www.pseudo-dojo.org/).
 
 ## Demo
