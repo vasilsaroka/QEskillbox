@@ -30,9 +30,9 @@ Under Linux OS:
 - Open Python file and evaluate it cell after cell sequentially.
 - Find in the working folder the QE outdir ``./tmp``.
 - Find in the working folder the results of optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
-- Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*:
+- Find in the working folder the animation for convergence in *animation_Si.gif* and *video_Si.mp4*.
   
-![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/bd93e31e-657b-4ebc-9297-88b84fbc5efb){:style="display:block; margin-left:auto; margin-right:auto"}
+![animation_Si](https://github.com/vasilsaroka/QEskillbox/assets/49445896/bd93e31e-657b-4ebc-9297-88b84fbc5efb)
 
 
 ## Differential Evolution
