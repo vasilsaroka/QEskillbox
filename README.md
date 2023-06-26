@@ -18,12 +18,17 @@ Under Linux OS:
 - Install Python distribution by typing in the terminal: sudo apt-get install conda (recommended) or see [Anaconda Distribution](https://www.anaconda.com/download/#linux) guidelines.
 - Pseudo potentials can be taken from [Pseudo Dojo](http://www.pseudo-dojo.org/).
 
+## Demo
+- Bash script and *Si.pz-vbc.UPF* pseudo potential into the same folder
+- Run bash script in terminal as ``./DEopt``
+- Find the results of the optimization and convergence plot in *QEDE_year-month-day_hours_minutes_seconds.out* and *QEDE_year-month-day_hours_minutes_seconds.png*.
+
 ## Differential Evolution
 ### Python
 This repository contains Python code for Quantum Espresso parameters optimization with Differential Evolution (DE) global optimization method [1].
 An introduction into this method together with a python code can be found in the excellent [tutorial](https://pablormier.github.io/2017/09/05/a-tutorial-on-differential-evolution-with-python/#) by Pablo Rodriguez-Mier.
 
-The DE algorithm here is rewritten from scratch in what we call a generation mixing form. It allows one to save some memory by storing the parameters space vectors from different generation in the same array. Several tests have shown that this does not affect the performance of the algorithm.
+The DE algorithm here is rewritten from scratch in what we call a generation mixing form. It allows one to save some memory by storing the parameters space vectors from different generation in the same array. Several tests have shown that this does not affect the performance of the algorithm. In addition, the DE iterations stop when the convergence is achieved to avoid extra evaluations. In the given case, convergence is defined as the spread of the cost function values for all parameter space vectors being less than some threshold value.
 
 The python file contains the main functions *QEGenrun* and *QEDE*, the cell for a test run of the code on bulk Si followed by a few other cells that are used for the output results analysis such as visualizing and animating the DE convergence. The *QEDE* can perform optimization for an arbitrary number of parameters including integer ones, i.e. those for which only integer part is meaningful. The integer parameters are counted from the end of a parameter space vector and therefore must be placed accordingly. A template file for bulk Si with parameter placeholders starting by convention from '@' is provided.  
 
@@ -32,6 +37,6 @@ The python file contains the main functions *QEGenrun* and *QEDE*, the cell for 
 ### Bash
 This repository also contains a bash script that creates the template of [QE input file](https://www.quantum-espresso.org/Doc/INPUT_PW.html) and a python script and then runs the python script. Once the python script run is finished, the temporarily created files are deleted leaving only the results in QEDE*.out and QEDE*.png output files. Bulk Si is taken as an example with the three optimization parameters: ecutwfc, celldm and kpt. **For kpt parameter only its integer part is meaningful**. 
 
-## Supporting the project
+## Supporting this project
    We believe everyone deserves access to knowledge that is grounded in science and integrity. That is why we keep our code open for all users, regardless of where they live or what they can afford to pay. This means more people can be better educated and inspired to make an impact on the global wellbeing. We have no shareholders or billionaire owner, meaning only your donations power our work and ensure it can remain open for all. Every contribution, however big or small, makes a real difference for QEskillbox future. If you find it useful, consider [supporting the project](https://paypal.me/vasilsaroka?locale.x=en_GB)
 . 
