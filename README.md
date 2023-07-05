@@ -14,13 +14,13 @@ The code was developed and tested under
 
 ## Preliminaries
 Under Linux OS:
-- Install QE by typing in the terminal: ``sudo apt-get install quantumespresso`` (recommended) or see [QE](https://www.quantum-espresso.org/login/) web page.
+- Install QE by typing in the terminal: ``sudo apt-get install quantum-espresso`` (recommended) or see [QE](https://www.quantum-espresso.org/login/) web page.
 - Install Python distribution by typing in the terminal: ``sudo apt-get install conda`` (recommended) or see [Anaconda Distribution](https://www.anaconda.com/download/#linux) guidelines.
 - Pseudo potentials can be taken from [Pseudo Dojo](http://www.pseudo-dojo.org/).
 
 ## Differential Evolution
 This repository contains a Python code for Quantum Espresso parameters optimization with Differential Evolution (DE) global optimization method [1].
-A general introduction into DE method together with a python realization can be found in the excellent [tutorial](https://pablormier.github.io/2017/09/05/a-tutorial-on-differential-evolution-with-python/#) by Pablo Rodriguez-Mier. Here, the DE method is adapted for the *geometry optimization* of the bulk Si crystal. In effect, this allows one to perform *0_Si_bulk* tasks *0_cutoff*, *1_alat* and *2_kpoints* from [DFT_QE_beginner_tutorial](https://github.com/Crivella/DFT_QE_beginner_tutorial) in a hassle-free single run.
+A general introduction into DE method together with a python realization can be found in the excellent [tutorial](https://pablormier.github.io/2017/09/05/a-tutorial-on-differential-evolution-with-python/#) by Pablo Rodriguez-Mier. Here, the DE method is adapted for the *geometry optimization* of the bulk Si crystal. In effect, this allows one to perform *0_Si_bulk* tasks *0_cutoff*, *1_alat* and *2_kpoints* from [DFT_QE_beginner_tutorial](https://github.com/Crivella/DFT_QE_beginner_tutorial) or [DFT-basics](https://github.com/cdhogan/DFT-basics) in a hassle-free single run.
 
 - [1] Price, K., Storn, R. (1997). Differential Evolution – A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces. *Journal of Global Optimization*, **11**, 341–359. [https://doi.org/10.1023/A:1008202821328](https://doi.org/10.1023/A:1008202821328)
 
